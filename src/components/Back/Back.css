@@ -1,0 +1,17 @@
+.back {
+  grid-column: 1/2;
+  align-self: start;
+  justify-self: center;
+  padding: 0.4rem 0.4rem 0.2rem 0.4rem;
+  margin-top: -0.4rem;
+  border: 0px solid transparent;
+}
+
+.back img {
+  width: 6.25rem;
+}
+
+.back:hover {
+  border: 0px solid #666699;
+  border-radius: 0.6rem;
+}

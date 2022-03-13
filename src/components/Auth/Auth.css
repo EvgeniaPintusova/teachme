@@ -1,0 +1,137 @@
+.authorize {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: grid;
+  justify-content: stretch;
+  align-items: center;
+  grid-row-gap: 1rem;
+  width: 100%;
+  max-width: 30rem;
+  padding: 1rem;
+}
+
+.form form {
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+}
+
+.mail input,
+.pass input,
+.name input {
+  color: #666;
+  height: 3rem;
+  width: 100%;
+  font-size: 1rem;
+  padding-right: 1rem;
+  border: none;
+}
+
+.mail img,
+.pass img,
+.name img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 10px;
+}
+
+.logoForm {
+  width: 80px;
+  margin: 60px 20px 20px;
+}
+
+.name,
+.mail,
+.pass {
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.btn {
+  padding: 0 15px;
+}
+
+
+
+.form button {
+  border: none;
+}
+.form button:hover {
+  cursor: pointer;
+}
+
+.form form button {
+  width: 100%;
+  padding: 11px 10px;
+  border-radius: 3px;
+  margin: 18px auto;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  background-color: #2b88d9;
+  color: #fff;
+}
+
+.form input:focus,
+.form button:focus {
+  outline: none;
+}
+
+.form form button:hover,
+.facebook:hover {
+  background-color: #4491d4;
+}
+
+.social-login {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.google,
+.facebook {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 1rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+   box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 5px 0px !important;
+}
+
+.social-login > button {
+  border-radius: 5px !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 5px 0px !important;
+}
+
+.social-login > button:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 10px 0px !important;
+}
+
+.facebook {
+  background: #3578e5;
+}
+
+.form > p {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #666;
+}
+
+.form > p a {
+  color: #1b7edf;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}

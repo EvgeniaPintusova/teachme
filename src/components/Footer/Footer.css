@@ -1,0 +1,35 @@
+footer {
+    background-color: #f2f2f2;
+    border-top: 1px solid silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    max-width: 120rem;
+    margin: 0 2rem;
+    font-size: 1.1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a img {
+    width: 3.75rem;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

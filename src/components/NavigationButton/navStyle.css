@@ -1,0 +1,23 @@
+.nav_button {
+    font-size: 1.125rem;
+    font-weight: lighter;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: .1rem solid #f2f2f2;
+    padding: .625rem 0;
+    border-radius: 1rem;
+    background-color: #29293d;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    height: auto;
+    min-width: 150px;
+    margin-left: -10px;
+}
+
+.nav_button:hover {
+    background-color: #f2f2f2;
+    color: #666699;
+    transition: all.3s ease;
+    border: .1rem solid #666699;
+}

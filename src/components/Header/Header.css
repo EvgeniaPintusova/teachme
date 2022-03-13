@@ -1,0 +1,107 @@
+header {
+    background-color: #29293d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.header {
+    max-width: 120rem;
+    margin: 0 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 12.5rem;
+    height: auto;
+}
+
+nav {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-column-gap: 1.5rem;
+}
+
+nav h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.header label {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    color: #fff;
+}
+
+.menu-icon {
+  font-size: 3em;
+  max-width: 45px;
+  text-align: center;
+  display: block;
+  margin: 15% auto;
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+.menu-icon:hover {
+  transform: scale(0.9);
+}
+.menu-icon:before, .menu-icon:after {
+  line-height: .5;
+}
+.menu-icon:before {
+  content: '☰';
+  display: block;
+}
+.menu-icon:after {
+  content: '╳';
+  font-size: .75em;
+  font-weight: 800;
+  display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+#toggle-menu:checked ~ label[for="toggle-menu"] .menu-icon {
+  transform: rotate(180deg);
+}
+#toggle-menu:checked ~ label[for="toggle-menu"] .menu-icon:before {
+  display: none;
+}
+#toggle-menu:checked ~ label[for="toggle-menu"] .menu-icon:after {
+  display: block;
+}
+
+#toggle-menu:checked ~ nav {
+    display: grid;
+}
+
+@media only screen and (max-width: 759px) {
+    .header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .header label{
+        display: block;
+    }
+
+    nav {
+        display: none;
+        margin: 1rem 0;
+        align-self: center;
+        width: 60%;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1.5rem;
+        background-color: #29293d;
+    }
+}
